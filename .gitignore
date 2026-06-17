@@ -1,0 +1,8 @@
+# Java compiled files
+*.class
+
+# Personal log data
+fitness_log.csv
+
+# VS Code settings
+.vscode/

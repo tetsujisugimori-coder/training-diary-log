@@ -312,17 +312,15 @@ public class FitnessLogApp {
         }
 
         System.out.println();
-        System.out.printf("%-12s  %-8s  %-30s  %-6s  %-18s  %-6s  %s%n",
-                "日付", "カテゴリ", "種目", "方向", "内容", "きつさ", "メモ");
+        System.out.println("日付 | カテゴリ | 種目 | 側 | 内容 | メモ");
 
         for (Record record : records) {
-            System.out.printf("%-12s  %-8s  %-30s  %-6s  %-18s  %-6d  %s%n",
+            System.out.printf("%s | %s | %s | %s | %s | %s%n",
                     record.date,
                     record.category,
                     record.exerciseName,
                     record.side,
                     formatContent(record),
-                    record.intensity,
                     record.memo);
         }
     }
